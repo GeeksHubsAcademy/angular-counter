@@ -1,0 +1,8 @@
+<button (click)="decrement()" *ngIf="count != min">-</button>
+<input type="number" [(ngModel)]="count">
+<button (click)="increment()" *ngIf="+count !== +max">+</button>
+
+{{min}} - {{max}}
+
+<button on-click="reset()">Reset</button>
+<br>

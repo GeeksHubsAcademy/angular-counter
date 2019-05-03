@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'counter';
+
+  max: number;
+  min: number;
+  limits = [];
+
+  newCounter() {
+    this.limits.push({
+      max: this.max,
+      min: this.min,
+    });
+  }
 }
